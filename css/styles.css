@@ -7,20 +7,23 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #a55151;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5c0067), to(#00d4ff));
+  background-image: linear-gradient(90deg, #5c0067 0%, #00d4ff 100%);
+  cursor: default;
 }
 
 .nav {
   background: #fff;
   width: 220px;
   height: 100vh;
-  border-right: 1px solid rgba(0, 0, 0, 0.199) s;
-  -webkit-box-shadow: 2px 0 8px rgba(0, 0, 0, 0.199);
-          box-shadow: 2px 0 8px rgba(0, 0, 0, 0.199);
+  border-right: 1px solid rgba(0, 0, 0, 0.856);
+  -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
+          box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
 }
 
 .nav .title {
-  background: rgba(100, 14, 14, 0.808);
+  background: #5c0067;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.856);
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -48,11 +51,11 @@ body {
 
 .nav .menu ul li a {
   text-decoration: none;
-  color: firebrick;
+  color: #5c0067;
 }
 
 .nav .menu ul li a:hover {
-  color: #8b1a1a;
+  color: firebrick;
 }
 
 .grid-container {
@@ -92,6 +95,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .grid-container .grid-items .grid7 {
@@ -100,5 +104,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1 / 5;
+  cursor: default;
 }
 /*# sourceMappingURL=styles.css.map */
