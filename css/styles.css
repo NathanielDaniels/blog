@@ -7,13 +7,16 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
+  background: #a55151;
 }
 
 .nav {
-  width: 200px;
+  background: #fff;
+  width: 220px;
   height: 100vh;
-  border-right: 2px solid rgba(0, 0, 0, 0.199);
+  border-right: 1px solid rgba(0, 0, 0, 0.199) s;
+  -webkit-box-shadow: 2px 0 8px rgba(0, 0, 0, 0.199);
+          box-shadow: 2px 0 8px rgba(0, 0, 0, 0.199);
 }
 
 .nav .title {
@@ -55,7 +58,7 @@ body {
 .grid-container {
   position: absolute;
   top: 50%;
-  left: 57%;
+  left: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 80%;
