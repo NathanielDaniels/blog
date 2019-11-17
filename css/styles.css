@@ -20,7 +20,7 @@ body {
 }
 
 .nav .title {
-  background: firebrick;
+  background: rgba(100, 14, 14, 0.808);
   color: white;
   text-align: center;
   padding: 20px 0;
