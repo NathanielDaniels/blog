@@ -29,14 +29,14 @@ body {
   padding: 20px 0;
   letter-spacing: 0.12rem;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 32px;
   width: 100%;
   text-shadow: 2px 2px #383838;
 }
 
 .nav .menu {
   height: 80vh;
-  width: 200px;
+  width: 100%;
 }
 
 .nav .menu ul {
@@ -44,9 +44,11 @@ body {
 }
 
 .nav .menu ul li {
-  margin: 20px;
-  font-size: 22px;
+  font-size: 24px;
   cursor: pointer;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
 }
 
 .nav .menu ul li a {
@@ -55,7 +57,7 @@ body {
 }
 
 .nav .menu ul li a:hover {
-  color: firebrick;
+  color: #8e009e;
 }
 
 .grid-container {
