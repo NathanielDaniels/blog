@@ -10,6 +10,7 @@ body {
   // background-image: radial-gradient(circle, #5c0067 20%, rgb(165, 81, 81) 100%);
   background-image: linear-gradient(90deg, #5c0067 0%, #00d4ff 100%);
   cursor: default;
+  overflow: hidden;
 }
 
 .nav {
