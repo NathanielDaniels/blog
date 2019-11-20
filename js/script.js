@@ -1,7 +1,8 @@
 const gridContainer = document.getElementById('gridContainer')
-// const grid = document.getElementById('grid')
-const grid = document.querySelector('.grid')
+const grid = document.getElementsByClassName('grid')
 
-grid.addEventListener('click', () => {
-  console.log('clicked')
-})
+for (i = 0; i < grid.length; i++) {
+  grid[i].addEventListener('click', () => {
+    console.log(grid[i])
+  })
+}
