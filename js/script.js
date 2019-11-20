@@ -6,7 +6,7 @@ for (let i = 0; i < grid.length; i++) {
     console.log(grid[i])
   })
 
-  if (grid[i].onclick == grid[0]) {
+  if (grid[i].onclick == grid[i]) {
     console.log('grid 1 my guy!')
   }
 }

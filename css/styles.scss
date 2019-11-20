@@ -14,7 +14,7 @@ body {
 
 .nav {
   background: #fff;
-  width: 300px;
+  width: 260px;
   height: 100vh;
   border-right: 1px solid rgba(0, 0, 0, 0.856);
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
@@ -24,7 +24,7 @@ body {
     // background: rgb(165, 81, 81);
     // background: rgba(100, 14, 14, 0.808);
     background: #5c0067;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.856);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -33,6 +33,7 @@ body {
     font-size: 32px;
     width: 100%;
     text-shadow: 2px 2px rgb(56, 56, 56);
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.75);
   }
   .menu {
     height: 80vh;
@@ -42,7 +43,7 @@ body {
       li {
         font-size: 24px;
         cursor: pointer;
-        border: 1px solid black;
+        border-bottom: 2px solid black;
         padding: 20px;
         text-align: center;
         a {
