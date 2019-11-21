@@ -65,7 +65,7 @@ body {
   top: 50%;
   left: 58%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 70%;
   height: 90vh;
   background: rgba(87, 12, 12, 0.212);
   padding: 10px;
@@ -83,9 +83,30 @@ body {
       background: #fff;
       display: flex;
       justify-content: center;
+      position: relative;
       align-items: center;
       border-radius: 5px;
       cursor: pointer;
+
+      li {
+        list-style: none;
+
+        img {
+          width: 100%;
+        }
+        .info {
+          padding: 20px;
+          h2 {
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+          p {
+            padding: 10px 0;
+          }
+        }
+      }
     }
     // .grid1 {
     //   color: white;

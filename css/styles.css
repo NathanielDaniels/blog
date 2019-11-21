@@ -69,7 +69,7 @@ body {
   left: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 60%;
+  width: 70%;
   height: 90vh;
   background: rgba(87, 12, 12, 0.212);
   padding: 10px;
@@ -96,11 +96,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.grid-container .grid-items .grid li {
+  list-style: none;
+}
+
+.grid-container .grid-items .grid li img {
+  width: 100%;
+}
+
+.grid-container .grid-items .grid li .info {
+  padding: 20px;
+}
+
+.grid-container .grid-items .grid li .info h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid-container .grid-items .grid li .info p {
+  padding: 10px 0;
 }
 
 .grid-container .grid-items .grid7 {

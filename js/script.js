@@ -1,7 +1,7 @@
 const gridContainer = document.getElementById('gridContainer')
 const grid = document.getElementsByClassName('grid')
 
-function performClick() 
+
 
 
 
