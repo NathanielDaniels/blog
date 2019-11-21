@@ -104,24 +104,29 @@ body {
   cursor: pointer;
 }
 
-.grid-container .grid-items .grid li {
-  list-style: none;
-}
-
-.grid-container .grid-items .grid li img {
-  width: 100%;
-}
-
-.grid-container .grid-items .grid li .info {
-  padding: 20px;
-}
-
-.grid-container .grid-items .grid li .info h2 a {
+.grid-container .grid-items .grid a {
   text-decoration: none;
   color: black;
 }
 
-.grid-container .grid-items .grid li .info p {
+.grid-container .grid-items .grid a li {
+  list-style: none;
+}
+
+.grid-container .grid-items .grid a li img {
+  width: 100%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 2px solid white;
+}
+
+.grid-container .grid-items .grid a li .info {
+  padding: 20px;
+}
+
+.grid-container .grid-items .grid a li .info p {
   padding: 10px 0;
 }
 
