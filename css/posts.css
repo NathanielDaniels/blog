@@ -1,11 +1,11 @@
 .post-container {
   position: absolute;
   top: 50%;
-  left: 58%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 60%;
-  height: 60vh;
+  height: 70vh;
   background: rgba(87, 12, 12, 0.212);
   padding: 10px;
   border-radius: 5px;
@@ -45,5 +45,38 @@
   -ms-grid-row-span: 4;
   grid-row: 1 / 5;
   cursor: default;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  background: #0fb2e7;
+  border-left: 1px solid rgba(0, 0, 0, 0.856);
+  -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.349);
+          box-shadow: -5px 0 10px rgba(0, 0, 0, 0.349);
+}
+
+.sidebar .sidebar-menu ul {
+  list-style: none;
+}
+
+.sidebar .sidebar-menu ul li {
+  font-size: 24px;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar .sidebar-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar .sidebar-menu ul li a:hover {
+  color: #8e009e;
 }
 /*# sourceMappingURL=posts.css.map */
