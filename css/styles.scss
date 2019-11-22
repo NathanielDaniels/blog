@@ -10,23 +10,22 @@ body {
   // background-image: radial-gradient(circle, #5c0067 20%, rgb(165, 81, 81) 100%);
   background-image: linear-gradient(90deg, #5c0067 0%, #00d4ff 100%);
   cursor: default;
-  overflow: hidden;
+  // overflow: hidden;
+  display: flex;
 }
 
 .nav {
-  background: #fff;
-  width: 260px;
+  // background: #fff;
+  background: #4e1f7d;
+  width: 200px;
   height: 100vh;
   border-right: 1px solid rgba(0, 0, 0, 0.856);
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
 
   .title {
-    // background: firebrick;
-    // background: rgb(165, 81, 81);
-    // background: rgba(100, 14, 14, 0.808);
-    background: #5c0067;
+    background: hsl(270, 60%, 26%);
     border-bottom: 1px solid rgba(0, 0, 0, 0.75);
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
     letter-spacing: 0.12rem;
@@ -45,14 +44,15 @@ body {
         font-size: 24px;
         cursor: pointer;
         border-bottom: 2px solid black;
+        // border-bottom: 2px solid #fff;
         padding: 20px;
         text-align: center;
         a {
           text-decoration: none;
-          color: #5c0067;
+          // color: #5c0067;
+          color: #fff;
           &:hover {
             color: #8e009e;
-            // color: yellow;
           }
         }
       }
@@ -61,12 +61,13 @@ body {
 }
 
 .grid-container {
-  overflow-y: scroll;
+  // scroll-behavior: smooth;
+  // overflow-y: scroll;
   position: absolute;
   top: 50%;
-  left: 58%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 60%;
   height: 90vh;
   background: rgba(87, 12, 12, 0.212);
   padding: 10px;
@@ -93,14 +94,6 @@ body {
       a {
         text-decoration: none;
         color: black;
-        // &::after {
-        //   position: absolute;
-        //   background: blue;
-        //   top: 0;
-        //   right: 0;
-        //   bottom: 0;
-        //   left: 0;
-        // }
         li {
           list-style: none;
           img {
@@ -109,12 +102,6 @@ body {
             filter: invert(1);
             object-fit: cover;
             border-bottom: 2px solid white;
-            // background-position: -180px -160px;
-            // background-image: url("https://yourdigitalresource.com/wp-content/uploads/blog-460x277-c.jpg");
-            // background-position: center;
-            // background-size: cover;
-            // border-start-start-radius: 5px;
-            // border-start-end-radius: 5px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
           }
@@ -144,10 +131,26 @@ body {
     // .grid6 {
     //   color: white;
     // }
-    .grid7 {
-      grid-column: 3;
-      grid-row: 1 / 5;
-      cursor: default;
-    }
+    // .grid7 {
+    //   grid-column: 3;
+    //   grid-row: 1 / 5;
+    //   cursor: default;
+    // }
+  }
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  background: #0fb2e7;
+  border-left: 1px solid rgba(0, 0, 0, 0.856);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.349);
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
