@@ -6,6 +6,8 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   background-image: -webkit-gradient(linear, left top, right top, from(#5c0067), to(#00d4ff));
   background-image: linear-gradient(90deg, #5c0067 0%, #00d4ff 100%);
@@ -74,39 +76,45 @@ body {
   width: 60%;
   height: 90vh;
   background: rgba(87, 12, 12, 0.212);
-  padding: 10px;
   border-radius: 5px;
+  padding: 20px;
 }
 
-.grid-container .grid-items {
+.grid-container .grid {
   display: -ms-grid;
   display: grid;
-  width: 100%;
   height: 100%;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-.grid-container .grid-items .grid {
-  margin: 10px;
+.grid-container .grid .grid-item {
   background: #fff;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.grid-container .grid-items .grid a {
+.grid-container .grid .grid-item a {
   text-decoration: none;
   color: black;
+  height: 100%;
+  width: 100%;
 }
 
-.grid-container .grid-items .grid a li {
+.grid-container .grid .grid-item a li {
   list-style: none;
 }
 
-.grid-container .grid-items .grid a li img {
+.grid-container .grid .grid-item a li img {
   width: 100%;
   height: 100px;
   -webkit-filter: invert(1);
@@ -118,11 +126,11 @@ body {
   border-top-right-radius: 5px;
 }
 
-.grid-container .grid-items .grid a li .info {
-  padding: 20px;
+.grid-container .grid .grid-item a li .grid-info {
+  padding: 10px;
 }
 
-.grid-container .grid-items .grid a li .info p {
+.grid-container .grid .grid-item a li .grid-info p {
   padding: 10px 0;
 }
 
