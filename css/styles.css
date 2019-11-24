@@ -20,7 +20,7 @@ body {
 .nav {
   background: #4e1f7d;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   border-right: 1px solid rgba(0, 0, 0, 0.856);
   -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
           box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
@@ -74,7 +74,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 60%;
-  height: 90vh;
+  height: auto;
   background: rgba(87, 12, 12, 0.212);
   border-radius: 5px;
 }
@@ -83,10 +83,8 @@ body {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
   padding: 20px;
 }
@@ -106,12 +104,12 @@ body {
 .grid-container .grid .grid-item a {
   text-decoration: none;
   color: black;
-  height: 100%;
-  width: 100%;
 }
 
 .grid-container .grid .grid-item a li {
   list-style: none;
+  min-height: 200px;
+  max-height: 500px;
 }
 
 .grid-container .grid .grid-item a li img {

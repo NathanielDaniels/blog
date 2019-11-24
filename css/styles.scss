@@ -7,9 +7,6 @@ body {
   width: 100%;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  // background: rgb(243, 243, 243);
-  // background: rgb(165, 81, 81);
-  // background-image: radial-gradient(circle, #5c0067 20%, rgb(165, 81, 81) 100%);
   background-image: linear-gradient(90deg, #5c0067 0%, #00d4ff 100%);
   cursor: default;
   // overflow: hidden;
@@ -17,10 +14,10 @@ body {
 }
 
 .nav {
-  // background: #fff;
   background: #4e1f7d;
   width: 200px;
-  height: 100vh;
+  // height: 100vh;
+  height: 100%;
   border-right: 1px solid rgba(0, 0, 0, 0.856);
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
 
@@ -68,15 +65,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  height: 90vh;
+  height: auto;
   background: rgba(87, 12, 12, 0.212);
   border-radius: 5px;
-  // padding: 20px;
   .grid {
     display: grid;
     height: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
     grid-gap: 20px;
     padding: 20px;
     .grid-item {
@@ -85,13 +81,14 @@ body {
       justify-content: center;
       border-radius: 5px;
       cursor: pointer;
+
       a {
         text-decoration: none;
         color: black;
-        height: 100%;
-        width: 100%;
         li {
           list-style: none;
+          min-height: 200px;
+          max-height: 500px;
           img {
             width: 100%;
             height: 100px;
